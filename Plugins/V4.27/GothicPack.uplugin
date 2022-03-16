@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"Version": 2,
+	"VersionName": "1.01",
+	"FriendlyName": "Gothic Pack",
+	"Description": "Gothic themed modular pack consisting of more than 300 assets such as architectural pieces, small props, ornaments, foliage, spline tools, blueprints,decals, and etc.",
+	"Category": "Modular Pack",
+	"CreatedBy": "Meshingun Studios",
+	"CreatedByURL": "https://www.artstation.com/meshingun-studio",
+	"DocsURL": "https://drive.google.com/file/d/1cWS-HM0vqzXu8DuugmYRsk63kTb80sut/view?usp=sharing",
+	"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/profile/Meshingun+Studio",
+	"SupportURL": "",
+	"EngineVersion": "5.0.0",
+	"CanContainContent": true,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "GothicPack",
+			"Type": "Runtime",
+			"LoadingPhase": "PreLoadingScreen",
+			"WhitelistPlatforms": [
+				"Win64",
+				"Win32",
+				"Mac"
+			]
+		}
+	]
+}

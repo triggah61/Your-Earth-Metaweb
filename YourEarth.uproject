@@ -15,6 +15,10 @@
 			"Name": "GothicPack",
 			"Enabled": true,
 			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/profile/Meshingun+Studio"
+		},
+		{
+			"Name": "Text3D",
+			"Enabled": true
 		}
 	]
 }

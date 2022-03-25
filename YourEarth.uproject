@@ -1,6 +1,6 @@
 {
 	"FileVersion": 3,
-	"EngineAssociation": "5.0",
+	"EngineAssociation": "5.0EA",
 	"Category": "",
 	"Description": "",
 	"Modules": [
@@ -15,6 +15,10 @@
 			"Name": "GothicPack",
 			"Enabled": true,
 			"MarketplaceURL": "https://www.unrealengine.com/marketplace/en-US/profile/Meshingun+Studio"
+		},
+		{
+			"Name": "Text3D",
+			"Enabled": true
 		}
 	]
 }

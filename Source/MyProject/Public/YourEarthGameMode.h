@@ -13,5 +13,7 @@ UCLASS()
 class MYPROJECT_API AYourEarthGameMode : public AGameModeBase
 {
 	GENERATED_BODY()
-	
+public:
+	AYourEarthGameMode();
+	virtual ~AYourEarthGameMode() = default;
 };

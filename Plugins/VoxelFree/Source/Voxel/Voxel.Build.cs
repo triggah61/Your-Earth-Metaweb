@@ -10,6 +10,7 @@ public class Voxel : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         bEnforceIWYU = true;
         bLegacyPublicIncludePaths = false;
+        bUsePrecompiled = true;
 
 #if UE_4_24_OR_LATER
 #else

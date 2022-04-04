@@ -14,6 +14,10 @@ class UGeneralFunctionLibrary : public UBlueprintFunctionLibrary
 {
 	GENERATED_BODY()
 
+	UFUNCTION(BlueprintPure, BlueprintCallable, Category = "General Purpose Functions")
+	static FString GetRandomIdentifier();
+
 	UFUNCTION(BlueprintCallable, Category = "General Purpose Functions")
-	static void DecrementFloatValueOfMap(const FVector& Location, FVector& Destination);
+	static float CountDownTimer(APlayerController* playerController, float currentTime, float time);
+
 };

@@ -37,18 +37,17 @@ FString UGeneralFunctionLibrary::GetRandomIdentifier()
 	return result;
 }
 
-float UGeneralFunctionLibrary::CountDownTimer(APlayerController* playerController, float currentTime, float time)
+float UGeneralFunctionLibrary::CountDownTimer(float currentTime, float countingDownTime, float time)
 {
-	float _ceiling = FGenericPlatformMath::CeilToInt(currentTime);
+
+	float _newTime = countingDownTime - time;
 	
-	float _newTime = currentTime - time;
-	
-	if (FGenericPlatformMath::CeilToInt(_newTime) != _ceiling) 
+	if (FGenericPlatformMath::CeilToInt(_newTime) != currentTime)
 	{
 		return FGenericPlatformMath::CeilToInt(_newTime);
 	}
 	else
 	{
-		return _ceiling;
+		return _newTime;
 	}
 }

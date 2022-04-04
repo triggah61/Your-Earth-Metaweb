@@ -18,6 +18,6 @@ class UGeneralFunctionLibrary : public UBlueprintFunctionLibrary
 	static FString GetRandomIdentifier();
 
 	UFUNCTION(BlueprintCallable, Category = "General Purpose Functions")
-	static float CountDownTimer(APlayerController* playerController, float currentTime, float time);
+	static float CountDownTimer(float currentTime, float countingDownTime, float time);
 
 };

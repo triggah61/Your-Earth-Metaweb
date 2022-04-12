@@ -49,7 +49,7 @@ float UPortalFunctionLibrary::GetFOVForCaptureComponents(const APlayerController
 
 			//SteamVR may not have FOV information, try to it via the current viewport
 			ULocalPlayer* Player = GEngine->GetGamePlayer(GEngine->GameViewport, 0);
-			Player->GetProjectionData(GEngine->GameViewport->Viewport, eSSP_FULL, ProjectionData);
+			//Player->GetProjectionData(GEngine->GameViewport->Viewport, eSSP_FULL, ProjectionData);
 			
 			float t = ProjectionData.ProjectionMatrix.M[1][1];
 			const float Rad2Deg = 180 / PI;

@@ -23,6 +23,8 @@ void ACOBA_MinionCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
+
+	UE_LOG(LogTemp, Warning, TEXT("I'm a minion. Have fun with C++."));
 }
 
 // Called to bind functionality to input

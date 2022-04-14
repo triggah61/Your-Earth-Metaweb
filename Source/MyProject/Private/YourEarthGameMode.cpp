@@ -5,6 +5,6 @@
 
 AYourEarthGameMode::AYourEarthGameMode() 
 {
-	UE_LOG(LogTemp, Warning, TEXT("Hello Lokesh. Have fun with this slow ass scene."));
+	UE_LOG(LogTemp, Warning, TEXT("Test Game Mode for Gamelift."));
 }
 

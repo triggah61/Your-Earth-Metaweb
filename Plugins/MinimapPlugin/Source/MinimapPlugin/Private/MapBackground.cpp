@@ -20,11 +20,13 @@ AMapBackground::AMapBackground()
 	CaptureComponent2D = CreateDefaultSubobject<USceneCaptureComponent2D>(TEXT("CaptureComponent2D"));
 	CaptureComponent2D->SetupAttachment(GetRootComponent());
 	
-	// Point camera downward, set to orthographic, low dynamic range and don't continuously render
+	// Point camera downward, set to orthographic, low dynamic range and continuously render
 	CaptureComponent2D->SetWorldRotation(FRotator(-90, -90, 0));
 	CaptureComponent2D->ProjectionType = ECameraProjectionMode::Type::Orthographic;
 	CaptureComponent2D->CaptureSource = ESceneCaptureSource::SCS_FinalColorLDR;
-	CaptureComponent2D->bCaptureEveryFrame = false;
+	CaptureComponent2D->bCaptureEveryFrame = true;
+	CaptureComponent2D->bUseFauxOrthoViewPos = true;
+	CaptureComponent2D->bCaptureOnMovement = false;
 
 	// Ideally fog doesn't show up in scene capture. Unfortunately, fog still shows up. 
 	// This is a known engine bug: https://issues.unrealengine.com/issue/UE-35666
